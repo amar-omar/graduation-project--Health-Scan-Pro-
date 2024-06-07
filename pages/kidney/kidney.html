@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./kidney.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="head">
+            <h2>
+                HEALTH SCAN PRO
+            </h2>
+
+            <ul>
+                <a href="../../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../../Nav/About.html">
+                    <li>About</li>
+                </a>
+                <a href="../../Nav/use.html">
+                    <li>How To Use</li>
+                </a>
+            </ul>
+        </header>
+
+        <div class="content">
+
+            <div class="lung">
+                <img src="../../assets/log/kidney.png" alt="kidney" width="83.7px">
+                <h3>kidney</h3>
+            </div>
+
+            <div class="contant">
+                <p>Our Website Analyzes Abnormal Kidney And Detects Most Common Kidney Conditions  Using State-Of-The-Art AI Technology..</p>
+                <p>
+                    *  Note That This Is A Demo Application And Is Not a Replacement for A Radiologist. </p>
+                <h4>Upload A Kidney CT Scan Image</h4>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="upload">
+
+            <div class="upload-img">
+                <img src="../../assets/log/upload.png" alt="upload-img" width="35px">
+            </div>
+
+            <div class="text">
+                <p>Drop And Scan File Here</p>
+                <p>Limit 200MB per file • JPG, JPEG, PNG</p>
+            </div>
+
+            <label for="file-upload" class="custom-file-upload">
+                Upload a Photo
+            </label>
+            <input id="file-upload" type="file" onchange="uploadImage(event)" />
+            <button id="btn" type="button" onclick="openCam()">Scan a photo</button>
+
+        </div>  
+
+        <div id="result"></div>
+        <canvas id="canvas"></canvas>
+    <div class="All col-6 ">
+        <div id="label-container">Your Result...</div>
+
+        <div class="Upload-A-Photo">
+        <div class="Scan-upload">
+    </div>
+    <div class="Scan-A-Photo">
+        <div id="webcam-container"></div>
+        <div id="label-container-cam"></div>
+    </div>
+        </div>
+    </div>  
+     
+
+        <footer class="footer">
+            <div class="foot">
+                <img src="../../assets/log/ct-scan.png" alt="logo" srcset="" width="60px">
+                <h2>health scan pro</h2>
+            </div>
+            <div class="links">
+                <a href="https://www.facebook.com/"></a> <img src="../../assets/log/facebook.png" alt="facebook"
+                    srcset="" width="40px"> </a>
+                <a href="https://twitter.com/login"> <img src="../../assets/log/twitter.png" alt="x" srcset=""
+                        width="40px">
+                </a>
+                <a href="https://www.instagram.com/"> <img src="../../assets/log/instagram.png" alt="instagram"
+                        srcset="" width="40px"> </a>
+            </div>
+
+        </footer>
+        <hr>
+        <p class="ph">©2024  Health Scan Pro | Privacy Policy | Terms & Conditions | Healthcare Marketing by future team .</p>
+
+
+
+
+
+
+
+
+    </div>
+    <script src="../../libs/tf.min.js"></script>
+    <script src="../../libs/teachablemachine-image.min.js"></script>
+    <script src="./kidney.js"></script>
+
+</body>
+
+</html>

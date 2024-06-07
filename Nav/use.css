@@ -1,0 +1,45 @@
+body {
+    width: 100%;
+    font-family: "Reddit Sans", sans-serif;
+    background-color: #f3f5fe;
+    overflow: hidden;
+  }
+  * {
+    padding: 5px;
+    margin: 5px;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3f266c;
+  }
+  .navbar ul li {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navbar a:hover {
+    color: rgb(230, 64, 202);
+  }
+  .container {
+    background-color: #ededed;
+    height: 700px;
+    width: 90%;
+    margin: 60px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 3px rgb(218, 188, 188);
+  }
+  .container h1{
+    text-align: center;
+    color: #3f266c;
+  }
+  .container ol li{
+    margin-left: 40px;
+    color: #3f266c;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 30px;
+padding-top: 40px;
+  }
